@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: List
+items:
+  - apiVersion: external-secrets.io/v1beta1
+    kind: ExternalSecret
+    metadata:
+      name: discord-webhook
+      namespace: flux-system
+    spec:
+      data:
+      - remoteRef:
+          key: /discord/webhooks/developer-friendly/notifications
+        secretKey: address
+      refreshInterval: 30m
+      secretStoreRef:
+        kind: ClusterSecretStore
+        name: aws-parameter-store
+      target:
+        immutable: true
+        template:
+          mergePolicy: Replace
+  - apiVersion: notification.toolkit.fluxcd.io/v1beta2
+    kind: Provider
+    metadata:
+      name: discord
+      namespace: flux-system
+    spec:
+      secretRef:
+        name: discord-webhook
+      type: discord
