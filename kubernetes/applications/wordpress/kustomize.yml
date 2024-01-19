@@ -49,6 +49,10 @@ items:
           kind: Deployment
           name: wordpress
           namespace: default
+      images:
+        - name: wordpress
+          newName: wordpress
+          newTag: "6-fpm-alpine"
       interval: 5m
       path: applications/wordpress-mysql
       prune: true

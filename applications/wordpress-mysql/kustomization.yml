@@ -6,3 +6,11 @@ resources:
   - wordpress-deployment.yml
   - wordpress-svc.yml
   - wordpress-ingress.yml
+
+images:
+  - name: wordpress
+    newName: wordpress
+    newTag: "6"
+  - name: mariadb
+    newName: mariadb
+    newTag: 11-jammy
