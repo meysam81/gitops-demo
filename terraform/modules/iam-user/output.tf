@@ -10,3 +10,11 @@ output "aws_secret_access_key" {
 output "aws_region" {
   value = data.aws_region.this.name
 }
+
+output "aws_role_arn" {
+  value = aws_iam_role.this.arn
+}
+
+output "kubernetes_secret_name" {
+  value = kubernetes_secret.this.metadata[0].name
+}

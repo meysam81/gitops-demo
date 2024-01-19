@@ -26,3 +26,15 @@ data "aws_iam_policy_document" "this" {
     }
   }
 }
+
+resource "kubernetes_secret" "this" {
+  metadata {
+    name      = var.kubernetes_secret_name
+    namespace = var.kubernetes_secret_namespace
+  }
+
+  data = {
+    AWS_ACCESS_KEY_ID     = aws_iam_access_key.this.id
+    AWS_SECRET_ACCESS_KEY = aws_iam_access_key.this.secret
+  }
+}
