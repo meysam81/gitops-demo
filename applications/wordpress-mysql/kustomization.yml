@@ -2,6 +2,7 @@ resources:
   - mariadb-secret.yml
   - mariadb-configmap.yml
   - mariadb-sts.yml
+  - mariadb-svc.yml
   - wordpress-deployment.yml
   - wordpress-svc.yml
   - wordpress-ingress.yml
