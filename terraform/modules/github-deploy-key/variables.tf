@@ -17,3 +17,8 @@ variable "deploy_key_read_only" {
   type    = bool
   default = true
 }
+
+variable "ssm_key" {
+  type     = string
+  nullable = true
+}
