@@ -53,7 +53,7 @@ items:
         - name: wordpress
           newName: wordpress
           newTag: "6-fpm-alpine"
-      interval: 5m
+      interval: 30s
       path: applications/wordpress-mysql
       prune: true
       retryInterval: 10s
