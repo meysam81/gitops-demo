@@ -15,7 +15,8 @@ items:
       images:
         - name: wordpress
           newName: wordpress
-          newTag: "6-fpm-alpine"
+          # newTag: "6-fpm-alpine"
+          newTag: nonexistent-tag
       interval: 30s
       path: applications/wordpress-mysql
       prune: true
