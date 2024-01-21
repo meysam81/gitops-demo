@@ -9,3 +9,6 @@ prepare-cluster:
 
 create-apps:
 	@kubectl apply -k kubernetes/
+
+ngrok:
+	@ngrok http --domain=llama-unified-insect.ngrok-free.app --host-header=flux.local 80
