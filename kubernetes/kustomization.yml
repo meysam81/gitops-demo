@@ -1,6 +1,4 @@
 resources:
   - ./applications/wordpress/kustomize.yml
 
-  - ./gitops/discord-alert-provider.yml
-  - ./gitops/gitrepo.yml
-  - ./gitops/flux-notification-controller-ingress.yml
+  - ./gitops/kustomize.yml
