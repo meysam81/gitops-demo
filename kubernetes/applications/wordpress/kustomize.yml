@@ -15,10 +15,9 @@ items:
       images:
         - name: wordpress
           newName: wordpress
-          # newTag: "6-fpm-alpine"
-          newTag: nonexistent-tag
+          newTag: "6-fpm-alpine"
       interval: 30s
-      path: applications/wordpress-mysql
+      path: applications/wordpress-mariadb
       prune: true
       retryInterval: 10s
       sourceRef:
@@ -27,7 +26,7 @@ items:
         namespace: flux-system
       suspend: false
       targetNamespace: default
-      timeout: 10m
+      timeout: 1m
       wait: true
   - apiVersion: notification.toolkit.fluxcd.io/v1beta2
     kind: Alert
