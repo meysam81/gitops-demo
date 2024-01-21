@@ -34,6 +34,8 @@ spec:
                 configMapKeyRef:
                   name: wp-mariadb
                   key: database
+            - name: WORDPRESS_DEBUG
+              value: "1"
           ports:
             - containerPort: 80
               name: http
