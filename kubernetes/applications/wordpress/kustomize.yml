@@ -36,9 +36,9 @@ items:
     spec:
       eventSeverity: error
       eventSources:
-      - kind: Kustomization
-        name: wordpress
-        namespace: default
+        - kind: Kustomization
+          name: wordpress
+          namespace: default
       providerRef:
         name: discord
       summary: Wordpress Reconciliation Ran Into Issue!
