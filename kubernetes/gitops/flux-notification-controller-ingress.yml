@@ -12,6 +12,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: wordpress
+                name: notification-controller
                 port:
                   name: http
