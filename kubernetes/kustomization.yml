@@ -1,0 +1,5 @@
+resources:
+  - ./applications/wordpress/kustomize.yml
+
+  - ./gitops/discord-alert-provider.yml
+  - ./gitops/gitrepo.yml

@@ -8,4 +8,4 @@ prepare-cluster:
 	@kubectl annotate ingressclass nginx ingressclass.kubernetes.io/is-default-class=true --overwrite
 
 create-apps:
-	@kubectl apply -f kubernetes/ -R
+	@kubectl apply -k kubernetes/
