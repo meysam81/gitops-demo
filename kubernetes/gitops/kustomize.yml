@@ -16,7 +16,6 @@ items:
         name: gitops-demo
         namespace: flux-system
       suspend: false
-      targetNamespace: default
       timeout: 1m
       wait: true
   - apiVersion: notification.toolkit.fluxcd.io/v1beta2
