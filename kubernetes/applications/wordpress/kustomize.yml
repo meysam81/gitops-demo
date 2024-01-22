@@ -24,7 +24,7 @@ items:
         kind: GitRepository
         name: gitops-demo
         namespace: flux-system
-      suspend: false
+      suspend: true
       targetNamespace: default
       timeout: 1m
       wait: true
