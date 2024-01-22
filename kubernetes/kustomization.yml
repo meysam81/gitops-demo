@@ -1,4 +1,6 @@
 resources:
+  - gitrepo.yml
+
   - ./applications/wordpress/kustomize.yml
 
   - ./gitops/kustomize.yml

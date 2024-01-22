@@ -1,4 +1,3 @@
 resources:
   - ./discord-alert-provider.yml
-  - ./gitrepo.yml
   - ./flux-notification-controller-ingress.yml
