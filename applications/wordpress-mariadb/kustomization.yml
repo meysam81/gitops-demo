@@ -10,7 +10,7 @@ resources:
 images:
   - name: wordpress
     newName: wordpress
-    newTag: "6"
+    newTag: "7"
   - name: mariadb
     newName: mariadb
     newTag: 11-jammy
